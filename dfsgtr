@@ -1,0 +1,11 @@
+hwnd = CreateWindowEx(WS_EX_CLIENTEDGE,"WindowClass","Caption",WS_VISIBLE|WS_OVERLAPPEDWINDOW,
+		CW_USEDEFAULT, /* x */
+		CW_USEDEFAULT, /* y */
+		640, /* width */
+		480, /* height */
+		NULL,NULL,hInstance,NULL);
+
+	if(hwnd == NULL) {
+		MessageBox(NULL, "Window Creation Failed!","Error!",MB_ICONEXCLAMATION|MB_OK);
+		return 0;
+	}
